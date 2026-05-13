@@ -1,0 +1,26 @@
+[
+{
+  "directory": "/media/marcel/Data/Dev/OpenGL/Assignment1/build",
+  "command": "/usr/lib/ccache/g++ -DAPP_SOURCE_DIR=\\\"/media/marcel/Data/Dev/OpenGL/Assignment1\\\" -I/media/marcel/Data/Dev/OpenGL/Assignment1/include -I/media/marcel/Data/Dev/OpenGL/Assignment1/headers -g -std=gnu++17 -o CMakeFiles/app.dir/src/main.cpp.o -c /media/marcel/Data/Dev/OpenGL/Assignment1/src/main.cpp",
+  "file": "/media/marcel/Data/Dev/OpenGL/Assignment1/src/main.cpp",
+  "output": "CMakeFiles/app.dir/src/main.cpp.o"
+},
+{
+  "directory": "/media/marcel/Data/Dev/OpenGL/Assignment1/build",
+  "command": "/usr/lib/ccache/gcc -DAPP_SOURCE_DIR=\\\"/media/marcel/Data/Dev/OpenGL/Assignment1\\\" -I/media/marcel/Data/Dev/OpenGL/Assignment1/include -I/media/marcel/Data/Dev/OpenGL/Assignment1/headers -g -o CMakeFiles/app.dir/src/glad.c.o -c /media/marcel/Data/Dev/OpenGL/Assignment1/src/glad.c",
+  "file": "/media/marcel/Data/Dev/OpenGL/Assignment1/src/glad.c",
+  "output": "CMakeFiles/app.dir/src/glad.c.o"
+},
+{
+  "directory": "/media/marcel/Data/Dev/OpenGL/Assignment1/build",
+  "command": "/usr/lib/ccache/g++ -DAPP_SOURCE_DIR=\\\"/media/marcel/Data/Dev/OpenGL/Assignment1\\\" -I/media/marcel/Data/Dev/OpenGL/Assignment1/include -I/media/marcel/Data/Dev/OpenGL/Assignment1/headers -g -std=gnu++17 -o CMakeFiles/app.dir/src/model.cpp.o -c /media/marcel/Data/Dev/OpenGL/Assignment1/src/model.cpp",
+  "file": "/media/marcel/Data/Dev/OpenGL/Assignment1/src/model.cpp",
+  "output": "CMakeFiles/app.dir/src/model.cpp.o"
+},
+{
+  "directory": "/media/marcel/Data/Dev/OpenGL/Assignment1/build",
+  "command": "/usr/lib/ccache/g++ -DAPP_SOURCE_DIR=\\\"/media/marcel/Data/Dev/OpenGL/Assignment1\\\" -I/media/marcel/Data/Dev/OpenGL/Assignment1/include -I/media/marcel/Data/Dev/OpenGL/Assignment1/headers -g -std=gnu++17 -o CMakeFiles/app.dir/src/mesh.cpp.o -c /media/marcel/Data/Dev/OpenGL/Assignment1/src/mesh.cpp",
+  "file": "/media/marcel/Data/Dev/OpenGL/Assignment1/src/mesh.cpp",
+  "output": "CMakeFiles/app.dir/src/mesh.cpp.o"
+}
+]

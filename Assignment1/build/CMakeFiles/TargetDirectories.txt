@@ -1,0 +1,3 @@
+/media/marcel/Data/Dev/OpenGL/Assignment1/build/CMakeFiles/app.dir
+/media/marcel/Data/Dev/OpenGL/Assignment1/build/CMakeFiles/edit_cache.dir
+/media/marcel/Data/Dev/OpenGL/Assignment1/build/CMakeFiles/rebuild_cache.dir
