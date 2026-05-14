@@ -1,8 +1,8 @@
 CMakeFiles/app.dir/src/main.cpp.o: \
- /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/src/main.cpp \
+ /media/marcel/Data/Dev/OpenGL/Assignment1/src/main.cpp \
  /usr/include/stdc-predef.h \
- /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/include/glad/glad.h \
- /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/include/KHR/khrplatform.h \
+ /media/marcel/Data/Dev/OpenGL/Assignment1/include/glad/glad.h \
+ /media/marcel/Data/Dev/OpenGL/Assignment1/include/KHR/khrplatform.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -21,7 +21,7 @@ CMakeFiles/app.dir/src/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
  /usr/include/GLFW/glfw3.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
- /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/headers/camera.h \
+ /media/marcel/Data/Dev/OpenGL/Assignment1/headers/camera.h \
  /usr/include/glm/glm.hpp /usr/include/glm/detail/_fixes.hpp \
  /usr/include/c++/13/cmath /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
@@ -231,7 +231,7 @@ CMakeFiles/app.dir/src/main.cpp.o: \
  /usr/include/glm/ext/matrix_transform.hpp \
  /usr/include/glm/ext/matrix_transform.inl \
  /usr/include/glm/gtc/matrix_transform.inl \
- /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/headers/model.h \
+ /media/marcel/Data/Dev/OpenGL/Assignment1/headers/model.h \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/allocator.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h \
  /usr/include/c++/13/bits/new_allocator.h /usr/include/c++/13/new \
@@ -286,8 +286,8 @@ CMakeFiles/app.dir/src/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/13/bits/charconv.h \
  /usr/include/c++/13/bits/basic_string.tcc \
- /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/headers/mesh.h \
- /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/headers/shader.h \
+ /media/marcel/Data/Dev/OpenGL/Assignment1/headers/mesh.h \
+ /media/marcel/Data/Dev/OpenGL/Assignment1/headers/shader.h \
  /usr/include/c++/13/fstream /usr/include/c++/13/istream \
  /usr/include/c++/13/ios /usr/include/c++/13/exception \
  /usr/include/c++/13/bits/exception_ptr.h \
@@ -328,6 +328,13 @@ CMakeFiles/app.dir/src/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
  /usr/include/c++/13/bits/fstream.tcc /usr/include/c++/13/sstream \
  /usr/include/c++/13/bits/sstream.tcc /usr/include/c++/13/iostream \
- /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/headers/shader.h \
- /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/headers/stb_image.h \
- /usr/include/c++/13/stdlib.h
+ /media/marcel/Data/Dev/OpenGL/Assignment1/headers/shader.h \
+ /media/marcel/Data/Dev/OpenGL/Assignment1/headers/stb_image.h \
+ /usr/include/c++/13/stdlib.h /usr/include/c++/13/algorithm \
+ /usr/include/c++/13/bits/stl_algo.h \
+ /usr/include/c++/13/bits/algorithmfwd.h \
+ /usr/include/c++/13/bits/stl_heap.h \
+ /usr/include/c++/13/bits/uniform_int_dist.h \
+ /usr/include/c++/13/bits/stl_tempbuf.h \
+ /usr/include/c++/13/pstl/glue_algorithm_defs.h \
+ /usr/include/c++/13/pstl/execution_defs.h

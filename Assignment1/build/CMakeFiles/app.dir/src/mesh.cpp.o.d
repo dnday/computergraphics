@@ -1,9 +1,9 @@
 CMakeFiles/app.dir/src/mesh.cpp.o: \
- /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/src/mesh.cpp \
+ /media/marcel/Data/Dev/OpenGL/Assignment1/src/mesh.cpp \
  /usr/include/stdc-predef.h \
- /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/headers/mesh.h \
- /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/include/glad/glad.h \
- /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/include/KHR/khrplatform.h \
+ /media/marcel/Data/Dev/OpenGL/Assignment1/headers/mesh.h \
+ /media/marcel/Data/Dev/OpenGL/Assignment1/include/glad/glad.h \
+ /media/marcel/Data/Dev/OpenGL/Assignment1/include/KHR/khrplatform.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -240,7 +240,6 @@ CMakeFiles/app.dir/src/mesh.cpp.o: \
  /usr/include/c++/13/bits/memory_resource.h \
  /usr/include/c++/13/bits/uses_allocator.h \
  /usr/include/c++/13/bits/uses_allocator_args.h /usr/include/c++/13/tuple \
- /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/headers/shader.h \
  /usr/include/c++/13/string /usr/include/c++/13/bits/stringfwd.h \
  /usr/include/c++/13/bits/char_traits.h \
  /usr/include/c++/13/bits/postypes.h /usr/include/c++/13/cwchar \
@@ -272,9 +271,11 @@ CMakeFiles/app.dir/src/mesh.cpp.o: \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/13/bits/charconv.h \
- /usr/include/c++/13/bits/basic_string.tcc /usr/include/c++/13/fstream \
- /usr/include/c++/13/istream /usr/include/c++/13/ios \
- /usr/include/c++/13/exception /usr/include/c++/13/bits/exception_ptr.h \
+ /usr/include/c++/13/bits/basic_string.tcc \
+ /media/marcel/Data/Dev/OpenGL/Assignment1/headers/shader.h \
+ /usr/include/c++/13/fstream /usr/include/c++/13/istream \
+ /usr/include/c++/13/ios /usr/include/c++/13/exception \
+ /usr/include/c++/13/bits/exception_ptr.h \
  /usr/include/c++/13/bits/cxxabi_init_exception.h \
  /usr/include/c++/13/typeinfo /usr/include/c++/13/bits/nested_exception.h \
  /usr/include/c++/13/bits/ios_base.h /usr/include/c++/13/ext/atomicity.h \

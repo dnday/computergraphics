@@ -1,7 +1,7 @@
 #include "mesh.h"
 
-Mesh::Mesh(std::vector<Vertex> vertices, std::vector<unsigned int> indices)
-    : vertices(std::move(vertices)), indices(std::move(indices)), VAO(0), VBO(0), EBO(0) {
+Mesh::Mesh(std::vector<Vertex> vertices, std::vector<unsigned int> indices, std::string name)
+    : vertices(std::move(vertices)), indices(std::move(indices)), name(std::move(name)), VAO(0), VBO(0), EBO(0) {
     setupMesh();
 }
 

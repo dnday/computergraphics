@@ -8,11 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/src/glad.c" "CMakeFiles/app.dir/src/glad.c.o" "gcc" "CMakeFiles/app.dir/src/glad.c.o.d"
-  "/home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/src/main.cpp" "CMakeFiles/app.dir/src/main.cpp.o" "gcc" "CMakeFiles/app.dir/src/main.cpp.o.d"
-  "/home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/src/mesh.cpp" "CMakeFiles/app.dir/src/mesh.cpp.o" "gcc" "CMakeFiles/app.dir/src/mesh.cpp.o.d"
-  "/home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/src/model.cpp" "CMakeFiles/app.dir/src/model.cpp.o" "gcc" "CMakeFiles/app.dir/src/model.cpp.o.d"
-  "/home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/src/stb_image.cpp" "CMakeFiles/app.dir/src/stb_image.cpp.o" "gcc" "CMakeFiles/app.dir/src/stb_image.cpp.o.d"
+  "/media/marcel/Data/Dev/OpenGL/Assignment1/src/glad.c" "CMakeFiles/app.dir/src/glad.c.o" "gcc" "CMakeFiles/app.dir/src/glad.c.o.d"
+  "/media/marcel/Data/Dev/OpenGL/Assignment1/src/main.cpp" "CMakeFiles/app.dir/src/main.cpp.o" "gcc" "CMakeFiles/app.dir/src/main.cpp.o.d"
+  "/media/marcel/Data/Dev/OpenGL/Assignment1/src/mesh.cpp" "CMakeFiles/app.dir/src/mesh.cpp.o" "gcc" "CMakeFiles/app.dir/src/mesh.cpp.o.d"
+  "/media/marcel/Data/Dev/OpenGL/Assignment1/src/model.cpp" "CMakeFiles/app.dir/src/model.cpp.o" "gcc" "CMakeFiles/app.dir/src/model.cpp.o.d"
+  "/media/marcel/Data/Dev/OpenGL/Assignment1/src/stb_image.cpp" "CMakeFiles/app.dir/src/stb_image.cpp.o" "gcc" "CMakeFiles/app.dir/src/stb_image.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

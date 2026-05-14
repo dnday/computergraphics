@@ -1,25 +1,34 @@
 {
-  "version": "0.2.0",
-  "configurations": [
-    {
-      "name": "Debug app",
-      "type": "cppdbg",
-      "request": "launch",
-      "program": "${workspaceFolder}/build/app",
-      "args": [],
-      "stopAtEntry": false,
-      "cwd": "${workspaceFolder}",
-      "environment": [],
-      "externalConsole": false,
-      "MIMode": "gdb",
-      "miDebuggerPath": "/usr/bin/gdb",
-      "setupCommands": [
-        {
-          "description": "Enable pretty-printing for gdb",
-          "text": "-enable-pretty-printing",
-          "ignoreFailures": true
-        }
-      ]
-    }
-  ]
+"version": "0.2.0",
+"configurations": [
+{
+"name": "Debug app",
+"type": "cppdbg",
+"request": "launch",
+"program": "${workspaceFolder}/build/app",
+"args": [],
+"stopAtEntry": false,
+"cwd": "${workspaceFolder}",
+"environment": [
+{
+"name": "__NV_PRIME_RENDER_OFFLOAD",
+"value": "1"
+},
+{
+"name": "__GLX_VENDOR_LIBRARY_NAME",
+"value": "nvidia"
+}
+],
+"externalConsole": false,
+"MIMode": "gdb",
+"miDebuggerPath": "/usr/bin/gdb",
+"setupCommands": [
+{
+"description": "Enable pretty-printing for gdb",
+"text": "-enable-pretty-printing",
+"ignoreFailures": true
+}
+]
+}
+]
 }

@@ -1,0 +1,30 @@
+# Prerequisites
+build/
+bin/
+obj/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Testing/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+
+# Operating System
+.DS_Store
+Thumbs.db
+
+# Dependencies
+include/glad/
+include/KHR/
+src/glad.c

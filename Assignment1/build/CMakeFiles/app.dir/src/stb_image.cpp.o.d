@@ -1,7 +1,7 @@
 CMakeFiles/app.dir/src/stb_image.cpp.o: \
- /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/src/stb_image.cpp \
+ /media/marcel/Data/Dev/OpenGL/Assignment1/src/stb_image.cpp \
  /usr/include/stdc-predef.h \
- /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/headers/stb_image.h \
+ /media/marcel/Data/Dev/OpenGL/Assignment1/headers/stb_image.h \
  /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \

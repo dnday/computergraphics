@@ -1,32 +1,32 @@
 [
 {
-  "directory": "/home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/build",
-  "command": "/usr/bin/c++ -DAPP_SOURCE_DIR=\\\"/home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1\\\" -I/home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/include -I/home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/headers -std=gnu++17 -o CMakeFiles/app.dir/src/main.cpp.o -c /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/src/main.cpp",
-  "file": "/home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/src/main.cpp",
+  "directory": "/media/marcel/Data/Dev/OpenGL/Assignment1/build",
+  "command": "/usr/lib/ccache/c++ -DAPP_SOURCE_DIR=\\\"/media/marcel/Data/Dev/OpenGL/Assignment1\\\" -I/media/marcel/Data/Dev/OpenGL/Assignment1/include -I/media/marcel/Data/Dev/OpenGL/Assignment1/headers -std=gnu++17 -o CMakeFiles/app.dir/src/main.cpp.o -c /media/marcel/Data/Dev/OpenGL/Assignment1/src/main.cpp",
+  "file": "/media/marcel/Data/Dev/OpenGL/Assignment1/src/main.cpp",
   "output": "CMakeFiles/app.dir/src/main.cpp.o"
 },
 {
-  "directory": "/home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/build",
-  "command": "/usr/bin/cc -DAPP_SOURCE_DIR=\\\"/home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1\\\" -I/home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/include -I/home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/headers  -o CMakeFiles/app.dir/src/glad.c.o -c /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/src/glad.c",
-  "file": "/home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/src/glad.c",
+  "directory": "/media/marcel/Data/Dev/OpenGL/Assignment1/build",
+  "command": "/usr/lib/ccache/cc -DAPP_SOURCE_DIR=\\\"/media/marcel/Data/Dev/OpenGL/Assignment1\\\" -I/media/marcel/Data/Dev/OpenGL/Assignment1/include -I/media/marcel/Data/Dev/OpenGL/Assignment1/headers  -o CMakeFiles/app.dir/src/glad.c.o -c /media/marcel/Data/Dev/OpenGL/Assignment1/src/glad.c",
+  "file": "/media/marcel/Data/Dev/OpenGL/Assignment1/src/glad.c",
   "output": "CMakeFiles/app.dir/src/glad.c.o"
 },
 {
-  "directory": "/home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/build",
-  "command": "/usr/bin/c++ -DAPP_SOURCE_DIR=\\\"/home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1\\\" -I/home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/include -I/home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/headers -std=gnu++17 -o CMakeFiles/app.dir/src/model.cpp.o -c /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/src/model.cpp",
-  "file": "/home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/src/model.cpp",
+  "directory": "/media/marcel/Data/Dev/OpenGL/Assignment1/build",
+  "command": "/usr/lib/ccache/c++ -DAPP_SOURCE_DIR=\\\"/media/marcel/Data/Dev/OpenGL/Assignment1\\\" -I/media/marcel/Data/Dev/OpenGL/Assignment1/include -I/media/marcel/Data/Dev/OpenGL/Assignment1/headers -std=gnu++17 -o CMakeFiles/app.dir/src/model.cpp.o -c /media/marcel/Data/Dev/OpenGL/Assignment1/src/model.cpp",
+  "file": "/media/marcel/Data/Dev/OpenGL/Assignment1/src/model.cpp",
   "output": "CMakeFiles/app.dir/src/model.cpp.o"
 },
 {
-  "directory": "/home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/build",
-  "command": "/usr/bin/c++ -DAPP_SOURCE_DIR=\\\"/home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1\\\" -I/home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/include -I/home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/headers -std=gnu++17 -o CMakeFiles/app.dir/src/mesh.cpp.o -c /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/src/mesh.cpp",
-  "file": "/home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/src/mesh.cpp",
+  "directory": "/media/marcel/Data/Dev/OpenGL/Assignment1/build",
+  "command": "/usr/lib/ccache/c++ -DAPP_SOURCE_DIR=\\\"/media/marcel/Data/Dev/OpenGL/Assignment1\\\" -I/media/marcel/Data/Dev/OpenGL/Assignment1/include -I/media/marcel/Data/Dev/OpenGL/Assignment1/headers -std=gnu++17 -o CMakeFiles/app.dir/src/mesh.cpp.o -c /media/marcel/Data/Dev/OpenGL/Assignment1/src/mesh.cpp",
+  "file": "/media/marcel/Data/Dev/OpenGL/Assignment1/src/mesh.cpp",
   "output": "CMakeFiles/app.dir/src/mesh.cpp.o"
 },
 {
-  "directory": "/home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/build",
-  "command": "/usr/bin/c++ -DAPP_SOURCE_DIR=\\\"/home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1\\\" -I/home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/include -I/home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/headers -std=gnu++17 -o CMakeFiles/app.dir/src/stb_image.cpp.o -c /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/src/stb_image.cpp",
-  "file": "/home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/src/stb_image.cpp",
+  "directory": "/media/marcel/Data/Dev/OpenGL/Assignment1/build",
+  "command": "/usr/lib/ccache/c++ -DAPP_SOURCE_DIR=\\\"/media/marcel/Data/Dev/OpenGL/Assignment1\\\" -I/media/marcel/Data/Dev/OpenGL/Assignment1/include -I/media/marcel/Data/Dev/OpenGL/Assignment1/headers -std=gnu++17 -o CMakeFiles/app.dir/src/stb_image.cpp.o -c /media/marcel/Data/Dev/OpenGL/Assignment1/src/stb_image.cpp",
+  "file": "/media/marcel/Data/Dev/OpenGL/Assignment1/src/stb_image.cpp",
   "output": "CMakeFiles/app.dir/src/stb_image.cpp.o"
 }
 ]
