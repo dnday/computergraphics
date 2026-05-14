@@ -21,6 +21,7 @@ add_executable(
     src/glad.c
     src/model.cpp
     src/mesh.cpp
+    src/stb_image.cpp
 )
 
 target_include_directories(

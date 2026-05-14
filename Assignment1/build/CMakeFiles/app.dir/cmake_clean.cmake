@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/app.dir/src/mesh.cpp.o.d"
   "CMakeFiles/app.dir/src/model.cpp.o"
   "CMakeFiles/app.dir/src/model.cpp.o.d"
+  "CMakeFiles/app.dir/src/stb_image.cpp.o"
+  "CMakeFiles/app.dir/src/stb_image.cpp.o.d"
   "app"
   "app.pdb"
 )

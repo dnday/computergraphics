@@ -1,3 +1,3 @@
-/media/marcel/Data/Dev/OpenGL/Assignment1/build/CMakeFiles/app.dir
-/media/marcel/Data/Dev/OpenGL/Assignment1/build/CMakeFiles/edit_cache.dir
-/media/marcel/Data/Dev/OpenGL/Assignment1/build/CMakeFiles/rebuild_cache.dir
+/home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/build/CMakeFiles/app.dir
+/home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/build/CMakeFiles/edit_cache.dir
+/home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/build/CMakeFiles/rebuild_cache.dir
