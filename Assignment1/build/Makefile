@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /media/marcel/Data/Dev/OpenGL/Assignment1
+CMAKE_SOURCE_DIR = /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /media/marcel/Data/Dev/OpenGL/Assignment1/build
+CMAKE_BINARY_DIR = /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /media/marcel/Data/Dev/OpenGL/Assignment1/build/CMakeFiles /media/marcel/Data/Dev/OpenGL/Assignment1/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/build/CMakeFiles /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /media/marcel/Data/Dev/OpenGL/Assignment1/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -225,6 +225,30 @@ src/model.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/model.cpp.s
 .PHONY : src/model.cpp.s
 
+src/stb_image.o: src/stb_image.cpp.o
+.PHONY : src/stb_image.o
+
+# target to build an object file
+src/stb_image.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/stb_image.cpp.o
+.PHONY : src/stb_image.cpp.o
+
+src/stb_image.i: src/stb_image.cpp.i
+.PHONY : src/stb_image.i
+
+# target to preprocess a source file
+src/stb_image.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/stb_image.cpp.i
+.PHONY : src/stb_image.cpp.i
+
+src/stb_image.s: src/stb_image.cpp.s
+.PHONY : src/stb_image.s
+
+# target to generate assembly for a file
+src/stb_image.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/stb_image.cpp.s
+.PHONY : src/stb_image.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -246,6 +270,9 @@ help:
 	@echo "... src/model.o"
 	@echo "... src/model.i"
 	@echo "... src/model.s"
+	@echo "... src/stb_image.o"
+	@echo "... src/stb_image.i"
+	@echo "... src/stb_image.s"
 .PHONY : help
 
 

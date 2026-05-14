@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /media/marcel/Data/Dev/OpenGL/Assignment1
+CMAKE_SOURCE_DIR = /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /media/marcel/Data/Dev/OpenGL/Assignment1/build
+CMAKE_BINARY_DIR = /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/app.dir/depend.make
@@ -70,67 +70,82 @@ include CMakeFiles/app.dir/progress.make
 include CMakeFiles/app.dir/flags.make
 
 CMakeFiles/app.dir/src/main.cpp.o: CMakeFiles/app.dir/flags.make
-CMakeFiles/app.dir/src/main.cpp.o: /media/marcel/Data/Dev/OpenGL/Assignment1/src/main.cpp
+CMakeFiles/app.dir/src/main.cpp.o: /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/src/main.cpp
 CMakeFiles/app.dir/src/main.cpp.o: CMakeFiles/app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/media/marcel/Data/Dev/OpenGL/Assignment1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/app.dir/src/main.cpp.o"
-	/usr/lib/ccache/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/src/main.cpp.o -MF CMakeFiles/app.dir/src/main.cpp.o.d -o CMakeFiles/app.dir/src/main.cpp.o -c /media/marcel/Data/Dev/OpenGL/Assignment1/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/app.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/src/main.cpp.o -MF CMakeFiles/app.dir/src/main.cpp.o.d -o CMakeFiles/app.dir/src/main.cpp.o -c /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/src/main.cpp
 
 CMakeFiles/app.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/app.dir/src/main.cpp.i"
-	/usr/lib/ccache/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/marcel/Data/Dev/OpenGL/Assignment1/src/main.cpp > CMakeFiles/app.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/src/main.cpp > CMakeFiles/app.dir/src/main.cpp.i
 
 CMakeFiles/app.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/main.cpp.s"
-	/usr/lib/ccache/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/marcel/Data/Dev/OpenGL/Assignment1/src/main.cpp -o CMakeFiles/app.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/src/main.cpp -o CMakeFiles/app.dir/src/main.cpp.s
 
 CMakeFiles/app.dir/src/glad.c.o: CMakeFiles/app.dir/flags.make
-CMakeFiles/app.dir/src/glad.c.o: /media/marcel/Data/Dev/OpenGL/Assignment1/src/glad.c
+CMakeFiles/app.dir/src/glad.c.o: /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/src/glad.c
 CMakeFiles/app.dir/src/glad.c.o: CMakeFiles/app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/media/marcel/Data/Dev/OpenGL/Assignment1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/app.dir/src/glad.c.o"
-	/usr/lib/ccache/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/app.dir/src/glad.c.o -MF CMakeFiles/app.dir/src/glad.c.o.d -o CMakeFiles/app.dir/src/glad.c.o -c /media/marcel/Data/Dev/OpenGL/Assignment1/src/glad.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/app.dir/src/glad.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/app.dir/src/glad.c.o -MF CMakeFiles/app.dir/src/glad.c.o.d -o CMakeFiles/app.dir/src/glad.c.o -c /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/src/glad.c
 
 CMakeFiles/app.dir/src/glad.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/app.dir/src/glad.c.i"
-	/usr/lib/ccache/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/marcel/Data/Dev/OpenGL/Assignment1/src/glad.c > CMakeFiles/app.dir/src/glad.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/src/glad.c > CMakeFiles/app.dir/src/glad.c.i
 
 CMakeFiles/app.dir/src/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/app.dir/src/glad.c.s"
-	/usr/lib/ccache/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/marcel/Data/Dev/OpenGL/Assignment1/src/glad.c -o CMakeFiles/app.dir/src/glad.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/src/glad.c -o CMakeFiles/app.dir/src/glad.c.s
 
 CMakeFiles/app.dir/src/model.cpp.o: CMakeFiles/app.dir/flags.make
-CMakeFiles/app.dir/src/model.cpp.o: /media/marcel/Data/Dev/OpenGL/Assignment1/src/model.cpp
+CMakeFiles/app.dir/src/model.cpp.o: /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/src/model.cpp
 CMakeFiles/app.dir/src/model.cpp.o: CMakeFiles/app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/media/marcel/Data/Dev/OpenGL/Assignment1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/app.dir/src/model.cpp.o"
-	/usr/lib/ccache/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/src/model.cpp.o -MF CMakeFiles/app.dir/src/model.cpp.o.d -o CMakeFiles/app.dir/src/model.cpp.o -c /media/marcel/Data/Dev/OpenGL/Assignment1/src/model.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/app.dir/src/model.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/src/model.cpp.o -MF CMakeFiles/app.dir/src/model.cpp.o.d -o CMakeFiles/app.dir/src/model.cpp.o -c /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/src/model.cpp
 
 CMakeFiles/app.dir/src/model.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/app.dir/src/model.cpp.i"
-	/usr/lib/ccache/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/marcel/Data/Dev/OpenGL/Assignment1/src/model.cpp > CMakeFiles/app.dir/src/model.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/src/model.cpp > CMakeFiles/app.dir/src/model.cpp.i
 
 CMakeFiles/app.dir/src/model.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/model.cpp.s"
-	/usr/lib/ccache/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/marcel/Data/Dev/OpenGL/Assignment1/src/model.cpp -o CMakeFiles/app.dir/src/model.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/src/model.cpp -o CMakeFiles/app.dir/src/model.cpp.s
 
 CMakeFiles/app.dir/src/mesh.cpp.o: CMakeFiles/app.dir/flags.make
-CMakeFiles/app.dir/src/mesh.cpp.o: /media/marcel/Data/Dev/OpenGL/Assignment1/src/mesh.cpp
+CMakeFiles/app.dir/src/mesh.cpp.o: /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/src/mesh.cpp
 CMakeFiles/app.dir/src/mesh.cpp.o: CMakeFiles/app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/media/marcel/Data/Dev/OpenGL/Assignment1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/app.dir/src/mesh.cpp.o"
-	/usr/lib/ccache/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/src/mesh.cpp.o -MF CMakeFiles/app.dir/src/mesh.cpp.o.d -o CMakeFiles/app.dir/src/mesh.cpp.o -c /media/marcel/Data/Dev/OpenGL/Assignment1/src/mesh.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/app.dir/src/mesh.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/src/mesh.cpp.o -MF CMakeFiles/app.dir/src/mesh.cpp.o.d -o CMakeFiles/app.dir/src/mesh.cpp.o -c /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/src/mesh.cpp
 
 CMakeFiles/app.dir/src/mesh.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/app.dir/src/mesh.cpp.i"
-	/usr/lib/ccache/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/marcel/Data/Dev/OpenGL/Assignment1/src/mesh.cpp > CMakeFiles/app.dir/src/mesh.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/src/mesh.cpp > CMakeFiles/app.dir/src/mesh.cpp.i
 
 CMakeFiles/app.dir/src/mesh.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/mesh.cpp.s"
-	/usr/lib/ccache/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/marcel/Data/Dev/OpenGL/Assignment1/src/mesh.cpp -o CMakeFiles/app.dir/src/mesh.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/src/mesh.cpp -o CMakeFiles/app.dir/src/mesh.cpp.s
+
+CMakeFiles/app.dir/src/stb_image.cpp.o: CMakeFiles/app.dir/flags.make
+CMakeFiles/app.dir/src/stb_image.cpp.o: /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/src/stb_image.cpp
+CMakeFiles/app.dir/src/stb_image.cpp.o: CMakeFiles/app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/app.dir/src/stb_image.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/src/stb_image.cpp.o -MF CMakeFiles/app.dir/src/stb_image.cpp.o.d -o CMakeFiles/app.dir/src/stb_image.cpp.o -c /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/src/stb_image.cpp
+
+CMakeFiles/app.dir/src/stb_image.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/app.dir/src/stb_image.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/src/stb_image.cpp > CMakeFiles/app.dir/src/stb_image.cpp.i
+
+CMakeFiles/app.dir/src/stb_image.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/stb_image.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/src/stb_image.cpp -o CMakeFiles/app.dir/src/stb_image.cpp.s
 
 # Object files for target app
 app_OBJECTS = \
 "CMakeFiles/app.dir/src/main.cpp.o" \
 "CMakeFiles/app.dir/src/glad.c.o" \
 "CMakeFiles/app.dir/src/model.cpp.o" \
-"CMakeFiles/app.dir/src/mesh.cpp.o"
+"CMakeFiles/app.dir/src/mesh.cpp.o" \
+"CMakeFiles/app.dir/src/stb_image.cpp.o"
 
 # External object files for target app
 app_EXTERNAL_OBJECTS =
@@ -139,12 +154,13 @@ app: CMakeFiles/app.dir/src/main.cpp.o
 app: CMakeFiles/app.dir/src/glad.c.o
 app: CMakeFiles/app.dir/src/model.cpp.o
 app: CMakeFiles/app.dir/src/mesh.cpp.o
+app: CMakeFiles/app.dir/src/stb_image.cpp.o
 app: CMakeFiles/app.dir/build.make
 app: /usr/lib/x86_64-linux-gnu/libglfw.so.3.3
 app: /usr/lib/x86_64-linux-gnu/libGLX.so
 app: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 app: CMakeFiles/app.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/media/marcel/Data/Dev/OpenGL/Assignment1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable app"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/app.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -156,6 +172,6 @@ CMakeFiles/app.dir/clean:
 .PHONY : CMakeFiles/app.dir/clean
 
 CMakeFiles/app.dir/depend:
-	cd /media/marcel/Data/Dev/OpenGL/Assignment1/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /media/marcel/Data/Dev/OpenGL/Assignment1 /media/marcel/Data/Dev/OpenGL/Assignment1 /media/marcel/Data/Dev/OpenGL/Assignment1/build /media/marcel/Data/Dev/OpenGL/Assignment1/build /media/marcel/Data/Dev/OpenGL/Assignment1/build/CMakeFiles/app.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1 /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1 /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/build /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/build /home/amelia-ocha/Documents/kuliah/semester_4/tvg/pasca_uts/computergraphics/Assignment1/build/CMakeFiles/app.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/app.dir/depend
 

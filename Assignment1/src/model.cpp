@@ -62,6 +62,13 @@ Mesh Model::processMesh(aiMesh* mesh, const aiScene* scene) {
             vertex.Normal = glm::vec3(0.0f, 1.0f, 0.0f);
         }
 
+        // texture coordinates (use first UV channel if available)
+        if (mesh->mTextureCoords[0]) {
+            vertex.TexCoords = glm::vec2(mesh->mTextureCoords[0][i].x, mesh->mTextureCoords[0][i].y);
+        } else {
+            vertex.TexCoords = glm::vec2(0.0f, 0.0f);
+        }
+
         vertices.push_back(vertex);
     }
 
