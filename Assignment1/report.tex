@@ -1,0 +1,100 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegray},
+    keywordstyle=\color{blue},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=none,                    
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+\lstset{style=mystyle}
+
+\title{Assignment 1 Report: Simple OpenGL Project}
+\author{Group Report}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+This report details the implementation of a simple OpenGL application. The project successfully loads a 3D model (Trophy Table) downloaded from a 3D asset provider, and renders it using custom vertex and fragment shaders. The application features user controls to modify matrices, lighting conditions, and materials.
+
+\section{Implementation Details}
+
+\subsection{Vertex and Fragment Shaders (Phong Model)}
+The application implements the standard Phong reflection model directly within the \texttt{fragment.glsl} file. The shader calculates three main components of lighting: Ambient, Diffuse, and Specular.
+
+\begin{itemize}
+    \item \textbf{Ambient Lighting:} Simulates indirect light bounding off surfaces so that no shadow is completely black.
+    \item \textbf{Diffuse Lighting:} Simulates the directional impact of the light object, making parts facing the light brighter.
+    \item \textbf{Specular (Phong) Lighting:} Simulates the bright spot/reflection of a light on objects.
+\end{itemize}
+
+Below is the snippet from the fragment shader calculating the Phong reflections:
+
+\begin{lstlisting}[language=C++]
+vec3 norm = normalize(Normal);
+vec3 viewDir = normalize(viewPos - FragPos);
+
+// Diffuse
+float diff = max(dot(norm, lightDir), 0.0);
+diffuse += intensity * diff * color * material.diffuse * texColor;
+
+// Specular (Phong)
+vec3 reflectDir = reflect(-lightDir, norm);  
+float spec = pow(max(dot(viewDir, reflectDir), 0.0), material.shininess);
+specular += intensity * spec * color * specMask;
+\end{lstlisting}
+
+Different parts of the mesh are given different material characteristics (like glass, metal, and wood) by passing different \texttt{material.shininess} and \texttt{material.alpha} values via uniforms. The code also implements logic to discard pixels for transparent logic separating opaque passes and blending passes.
+
+\subsection{Loading a 3D Model (VAO \& VBO)}
+The project loads complex \texttt{.obj} files using the Assimp (Asset Importer) Library. In the codebase, the \texttt{Model} and \texttt{Mesh} classes handle the abstraction. Once vertex data (Position, Normal, Texture Coordinates) is parsed, it is securely bound to the GPU leveraging Vertex Array Objects (VAO) and Vertex Buffer Objects (VBO).
+
+\begin{lstlisting}[language=C++]
+glGenVertexArrays(1, &VAO);
+glGenBuffers(1, &VBO);
+glGenBuffers(1, &EBO);
+
+glBindVertexArray(VAO);
+glBindBuffer(GL_ARRAY_BUFFER, VBO);
+glBufferData(GL_ARRAY_BUFFER, vertices.size() * sizeof(Vertex), 
+             &vertices[0], GL_STATIC_DRAW);
+\end{lstlisting}
+
+This approach ensures the pipeline only copies data to the graphics card once, which is highly efficient. In the rendering loop, \texttt{glBindVertexArray(VAO)} is called before invoking \texttt{glDrawElements}.
+
+\subsection{Model, View, and Projection Matrices Setup}
+The 3D space transformations are thoroughly demonstrated with interactive key-bindings:
+
+\begin{itemize}
+    \item \textbf{Model Matrix:} Controls the position, scale, and rotation of the object. By pressing the \textbf{'R'} key, an auto-rotation feature modifies the model matrix over time frame-by-frame using \texttt{glm::rotate}.
+    \item \textbf{View Matrix:} Simulates a moving camera. Users can press \textbf{'V'} to cycle between three defined camera offsets (Cinematic, Side, and Top perspectives) achieved using \texttt{glm::lookAt()}.
+    \item \textbf{Projection Matrix:} Simulates the lens of the camera. Pressing \textbf{'P'} toggles the application between a perspective projection (simulating human eyes via \texttt{glm::perspective()}) and an orthographic projection (ignoring depth variance via \texttt{glm::ortho()}).
+\end{itemize}
+
+\section{Screenshots}
+\textit{(Please insert the final screenshots of the running app here. Included pictures should demonstrate the Orthographic vs Perspective projections, Textures enabled/disabled, and different view angles.)}
+
+\end{document}

@@ -49,23 +49,6 @@ make -j4
 
 ## 4. Running the Application
 
-After a successful build, an executable named `app` will be generated inside the `build` folder. To run it:
-
-```bash
-./app
-```
-
-> **Note for Git Collaboration:** The `build/` directory is deliberately ignored in Git (`.gitignore`). It should **not** be uploaded because the `app` binary and compile files are specific to your Operating System. To see the application, your teammates simply need to pull the code and run the build steps above on their own machines.
-
-## 5. Controls
-
-Once the application is running, you can interact with the scene using the following keys:
-- **T**: Toggle Texture / Material color mode.
-- **P**: Toggle between Perspective and Orthographic projection.
-- **V**: Cycle through camera presets (Cinematic / Side / Top).
-- **R**: Toggle auto-rotation of the model.
-- **ESC**: Exit the application.
-
 After a successful build, run the executable from the `build` directory:
 ```bash
 ./app

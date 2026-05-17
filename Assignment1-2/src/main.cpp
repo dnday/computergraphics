@@ -91,11 +91,11 @@ Material getMaterialForMesh(const std::string& name, int index) {
     if (lowerName.find("glass") != std::string::npos || lowerName.find("kaca") != std::string::npos) {
         return {glm::vec3(0.45f, 0.34f, 0.62f), 0.02f, 0.18f, 1.05f, 256.0f, 0.35f};
     } else if (lowerName.find("frame") != std::string::npos || lowerName.find("metal") != std::string::npos || lowerName.find("bingkai") != std::string::npos) {
-        return {glm::vec3(1.0f), 0.42f, 0.74f, 0.32f, 72.0f, 1.0f};
-    } else if (lowerName.find("sword") != std::string::npos || lowerName.find("dagger") != std::string::npos || lowerName.find("pedang") != std::string::npos || lowerName.find("object") != std::string::npos || lowerName.find("item") != std::string::npos) {
-        return {glm::vec3(1.0f), 0.58f, 0.96f, 1.75f, 260.0f, 1.0f};
+        return {glm::vec3(0.36f, 0.18f, 0.14f), 0.18f, 0.62f, 0.35f, 72.0f, 1.0f};
+    } else if (lowerName.find("katana") != std::string::npos || lowerName.find("wep") != std::string::npos || lowerName.find("sword") != std::string::npos || lowerName.find("dagger") != std::string::npos || lowerName.find("pedang") != std::string::npos || lowerName.find("object") != std::string::npos || lowerName.find("item") != std::string::npos) {
+        return {glm::vec3(0.98f, 0.94f, 0.88f), 0.46f, 0.92f, 1.35f, 230.0f, 1.0f};
     } else if (lowerName.find("floor") != std::string::npos || lowerName.find("base") != std::string::npos || lowerName.find("plane") != std::string::npos || lowerName.find("meja") != std::string::npos || lowerName.find("table") != std::string::npos) {
-        return {glm::vec3(1.0f), 0.48f, 0.78f, 0.24f, 48.0f, 1.0f};
+        return {glm::vec3(0.34f, 0.17f, 0.11f), 0.24f, 0.66f, 0.24f, 48.0f, 1.0f};
     }
     
     if (index == 2) { 
@@ -103,12 +103,14 @@ Material getMaterialForMesh(const std::string& name, int index) {
     }
 
     // Default fallback
-    return {glm::vec3(1.0f), 0.42f, 0.72f, 0.35f, 64.0f, 1.0f};
+    return {glm::vec3(0.50f, 0.45f, 0.55f), 0.05f, 0.50f, 0.40f, 32.0f, 1.0f};
 }
 
 static int getObjectKindForMesh(const std::string& name) {
     std::string lowerName = toLower(name);
-    if (lowerName.find("sword") != std::string::npos ||
+    if (lowerName.find("katana") != std::string::npos ||
+        lowerName.find("wep") != std::string::npos ||
+        lowerName.find("sword") != std::string::npos ||
         lowerName.find("dagger") != std::string::npos ||
         lowerName.find("pedang") != std::string::npos) {
         return 2;
@@ -131,21 +133,21 @@ static void setMaterial(const Shader& shader, const Material& mat) {
 }
 
 static void setLights(const Shader& shader, float time) {
-    float keyOrbit = time * 0.42f;
-    float fillOrbit = time * 0.30f + 2.1f;
-    float pulse = 0.5f + 0.5f * std::sin(time * 1.15f);
+    float keyOrbit = time * 0.36f;
+    float fillOrbit = time * 0.24f + 2.1f;
+    float pulse = 0.5f + 0.5f * std::sin(time * 1.05f);
 
-    shader.setVec3("lights[0].position", glm::vec3(std::sin(keyOrbit) * 4.2f - 1.0f, 4.6f + std::sin(time * 0.85f) * 0.25f, std::cos(keyOrbit) * 3.4f + 1.2f));
-    shader.setVec3("lights[0].color", glm::vec3(1.00f, 0.78f, 0.58f));
-    shader.setFloat("lights[0].intensity", 1.55f + pulse * 0.35f);
+    shader.setVec3("lights[0].position", glm::vec3(std::sin(keyOrbit) * 3.2f - 0.8f, 3.0f + std::sin(time * 0.85f) * 0.20f, std::cos(keyOrbit) * 2.6f + 2.4f));
+    shader.setVec3("lights[0].color", glm::vec3(1.00f, 0.82f, 0.62f));
+    shader.setFloat("lights[0].intensity", 1.65f + pulse * 0.30f);
 
-    shader.setVec3("lights[1].position", glm::vec3(std::sin(fillOrbit) * 5.0f, 2.8f, std::cos(fillOrbit) * 4.6f));
-    shader.setVec3("lights[1].color", glm::vec3(0.24f, 0.34f, 0.78f));
-    shader.setFloat("lights[1].intensity", 0.34f + (1.0f - pulse) * 0.16f);
+    shader.setVec3("lights[1].position", glm::vec3(std::sin(fillOrbit) * 4.0f, 1.8f, std::cos(fillOrbit) * 3.6f));
+    shader.setVec3("lights[1].color", glm::vec3(0.20f, 0.32f, 0.86f));
+    shader.setFloat("lights[1].intensity", 0.42f + (1.0f - pulse) * 0.18f);
 
-    shader.setVec3("lights[2].position", glm::vec3(std::sin(time * 0.75f) * 2.4f, 3.2f, -4.0f + std::cos(time * 0.65f) * 0.8f));
-    shader.setVec3("lights[2].color", glm::vec3(0.48f, 0.68f, 1.00f));
-    shader.setFloat("lights[2].intensity", 1.05f + std::sin(time * 1.4f) * 0.25f);
+    shader.setVec3("lights[2].position", glm::vec3(std::sin(time * 0.70f) * 2.5f, 2.2f, -2.8f + std::cos(time * 0.55f) * 0.7f));
+    shader.setVec3("lights[2].color", glm::vec3(0.52f, 0.74f, 1.00f));
+    shader.setFloat("lights[2].intensity", 0.92f + std::sin(time * 1.25f) * 0.20f);
 }
 
 void key_callback(GLFWwindow* window, int key, int /*scancode*/, int action, int /*mods*/) {
@@ -184,8 +186,8 @@ static glm::mat4 buildPresetView(int preset) {
     switch (preset) {
         case 0: // Cinematic angle
             return glm::lookAt(
-                glm::vec3(3.9f, 3.15f, 5.45f),
-                glm::vec3(0.02f, 0.55f, 0.02f),
+                glm::vec3(0.35f, 1.55f, 5.10f),
+                glm::vec3(0.0f, 0.04f, 0.0f),
                 glm::vec3(0.0f, 1.0f, 0.0f)
             );
         case 1: // Side view
@@ -245,7 +247,7 @@ int main() {
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
-    GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "OpenGL Assignment - Cinematic", nullptr, nullptr);
+    GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "OpenGL Assignment 1-2 - Katana", nullptr, nullptr);
     if (!window) {
         std::cerr << "ERROR::GLFW::WINDOW_CREATION_FAILED" << std::endl;
         glfwTerminate();
@@ -269,13 +271,12 @@ int main() {
         buildPath("shaders/fragment.glsl").c_str()
     );
 
-    Model showcase(buildPath("models/trophy table.obj"));
+    Model showcase(buildPath("models/katana/katana.obj"));
 
-    unsigned int diffuseMap  = loadTexture(buildPath("textures/trophytable1_texture_(3).png"));
-    unsigned int specularMap = loadTexture(buildPath("textures/trophytable1_spec_(4).png"));
-    unsigned int roughnessMap = loadTexture(buildPath("textures/trophytable1_roughness_(4).png"));
-    unsigned int metallicMap = loadTexture(buildPath("textures/trophytable1_metallic_(3).png"));
-    unsigned int alphaMap    = loadTexture(buildPath("textures/trophytable1_transparency_(2).png"));
+    unsigned int diffuseMap  = loadTexture(buildPath("textures/katana/katana_diffuse.jpg"));
+    unsigned int specularMap = loadTexture(buildPath("textures/katana/katana_specular.jpg"));
+    unsigned int roughnessMap = loadTexture(buildPath("textures/katana/katana_metallic.jpg"));
+    unsigned int alphaMap    = diffuseMap;
     unsigned int floorVBO = 0;
     unsigned int floorVAO = createFloorVAO(floorVBO);
 
@@ -283,8 +284,7 @@ int main() {
     shader.setInt("texDiffuse",  0);
     shader.setInt("texSpecular", 1);
     shader.setInt("texRoughness", 2);
-    shader.setInt("texMetallic", 3);
-    shader.setInt("texAlpha",    4);
+    shader.setInt("texAlpha",    3);
 
     float lastFrame = 0.0f;
 
@@ -303,8 +303,8 @@ int main() {
         if (g_autoRotate)
             g_rotateAngle += 45.0f * deltaTime;
 
-        // Cinematic background (Studio gray color)
-        glClearColor(0.08f, 0.09f, 0.11f, 1.0f);
+        // Cinematic background
+        glClearColor(0.010f, 0.012f, 0.024f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
         shader.use();
@@ -312,9 +312,10 @@ int main() {
         glm::mat4 showcaseModel = glm::mat4(1.0f);
         if (g_autoRotate)
             showcaseModel = glm::rotate(showcaseModel, glm::radians(g_rotateAngle), glm::vec3(0.0f, 1.0f, 0.0f));
-        showcaseModel = glm::rotate(showcaseModel, glm::radians(-28.0f), glm::vec3(0.0f, 1.0f, 0.0f));
-        showcaseModel = glm::scale(showcaseModel, glm::vec3(1.18f));
-        showcaseModel = glm::translate(showcaseModel, glm::vec3(0.0f, -0.0158f, 0.0f));
+        showcaseModel = glm::rotate(showcaseModel, glm::radians(-24.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+        showcaseModel = glm::rotate(showcaseModel, glm::radians(-90.0f), glm::vec3(0.0f, 0.0f, 1.0f));
+        showcaseModel = glm::scale(showcaseModel, glm::vec3(0.060f));
+        showcaseModel = glm::translate(showcaseModel, glm::vec3(0.0f, -26.8844f, -5.3683f));
 
         glm::mat4 view = buildPresetView(g_cameraPreset);
         glm::mat4 invView = glm::inverse(view);
@@ -323,7 +324,7 @@ int main() {
         float aspect = static_cast<float>(SCR_WIDTH) / static_cast<float>(SCR_HEIGHT);
         glm::mat4 projection;
         if (g_projMode == 0) {
-            projection = glm::perspective(glm::radians(38.0f), aspect, 0.1f, 100.0f);
+            projection = glm::perspective(glm::radians(33.0f), aspect, 0.1f, 100.0f);
         } else {
             float orthoSize = 3.7f;
             projection = glm::ortho(-orthoSize * aspect, orthoSize * aspect, -orthoSize, orthoSize, 0.1f, 100.0f);
@@ -357,8 +358,6 @@ int main() {
             glActiveTexture(GL_TEXTURE2);
             glBindTexture(GL_TEXTURE_2D, roughnessMap);
             glActiveTexture(GL_TEXTURE3);
-            glBindTexture(GL_TEXTURE_2D, metallicMap);
-            glActiveTexture(GL_TEXTURE4);
             glBindTexture(GL_TEXTURE_2D, alphaMap);
         }
 
